@@ -1,0 +1,12 @@
+@import '../constants/colours.scss';
+@import '../constants/sizing.scss';
+
+.display-movies{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 20px;
+
+    .movie-poster{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+
+import React from 'react';
+import { useParams, useLocation, useHistory } from 'react-router-dom';
+
+export const MovieInfo = () => {
+    console.log('6');
+    const param = useParams();
+    const location = useLocation();
+    const history = useHistory();
+    const { movieID } = param;
+    const { state } = location;
+    // const 
+    console.log(movieID);
+    console.log(state);
+    console.log(history);
+    return (
+        <div className="movie-detail">
+            <img src={state.img} alt="poster" />
+            <h3>Title</h3> {state.title}
+            <h3>Genre</h3> {state.genres}
+            <h4>Description</h4> {state.desc}
+            <h4>Language</h4> {state.language}
+        </div>
+    )
+}
